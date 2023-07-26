@@ -1,0 +1,19 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    background-color: #1D1D1F rgba(208, 210, 221, 0.2);
+    z-index: -2;
+}
+
+nav {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* position: absolute; */
+    top: 20px;
+    color: #1D1D1F;
+    font-family: 'Jost', sans-serif;
+    z-index: 10;
+}
