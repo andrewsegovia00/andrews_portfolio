@@ -1,8 +1,19 @@
-# React + Vite
+## Screenshots
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![DarkMode](./src/assets/images/screenshots/LightMode.png)
+![LightMode](./src/assets/images/screenshots/DarkMode.png)
 
-Currently, two official plugins are available:
+## SetUp
+This is a React + Vite portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+clone the repo
+```git clone < repo url >```
+
+Now cd into the project
+```cd andrews_portfolio```
+
+Then install dependencies by running npm i
+```npm i```
+
+Finally, run the command 
+```npm run dev```
