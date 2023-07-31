@@ -1,4 +1,4 @@
-import '../style/portfolio.css'
+import '../style/lightPortfolio.css'
 
 function LightPortfolio({toggleMode}) {
     return (

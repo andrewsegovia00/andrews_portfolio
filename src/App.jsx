@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <Router>
-      <Nav />
+      <Nav isLightMode={isLightMode} toggleMode={toggleMode}/>
       <Routes>
         <Route path="/" element={<Home isLightMode={isLightMode} toggleMode={toggleMode} />} />
         <Route path="/portfolio" element={<Projects isLightMode={isLightMode} toggleMode={toggleMode} />} />

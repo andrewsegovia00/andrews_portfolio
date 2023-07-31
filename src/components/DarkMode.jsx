@@ -9,7 +9,7 @@ function DarkMode({toggleMode}) {
         </video>
         <div className="color-mask"></div>
       </div>
-      <div className="dark-mode-text d-inline-flex p-2 justify-content-center" >
+      <div className="light-mode-text d-inline-flex p-2 justify-content-center" >
         <div onClick={ toggleMode }>
           Dark Mode
           </div>
