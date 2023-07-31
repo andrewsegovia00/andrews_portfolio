@@ -1,6 +1,6 @@
 import '../style/darkMode.css'
 
-function DarkMode({ toggleMode }) {
+function DarkMode({toggleMode}) {
   return (
     <>
       <div className="video-container">
@@ -9,22 +9,13 @@ function DarkMode({ toggleMode }) {
         </video>
         <div className="color-mask"></div>
       </div>
-      <nav className='navbar '>
-          <div className="left">
-          <span className="closingTag">{'</>'}</span>
-            Andrew Segovia
-            </div>
-          <div className="right">
-              <a href="#">Home</a>
-              <a href="#">Portfolio</a>
-              <a href="#">About Me</a>
-          </div>
-      </nav>
-      <div className="dark-mode-text d-inline-flex p-2 justify-content-center" onClick={ toggleMode }>
+      <div className="dark-mode-text d-inline-flex p-2 justify-content-center" >
+        <div onClick={ toggleMode }>
           Dark Mode
+          </div>
       </div>
       <div className='d-flex p-2 justify-content-center'>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png' onClick={ toggleMode }/>
         <img className="transitionIcons mr-3" src='../src/assets/images/whiteDot.png'/>
         <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png'/>
       </div>
