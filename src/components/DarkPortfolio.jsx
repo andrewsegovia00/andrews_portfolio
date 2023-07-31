@@ -97,6 +97,7 @@ function DarkPortfolio({toggleMode}) {
 
         </section>
     </div>
+    <div className='backdrop'></div>
       </>
     )
 }

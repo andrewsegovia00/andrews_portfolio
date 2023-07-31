@@ -26,22 +26,15 @@ video {
 }
 
 .light-mode-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-family: 'Jost Light', sans-serif;
     color: white;
-    /* text-align: center; */
-    /* position: absolute;  */
-    /* top: 80px; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
     width: 100%;
     cursor: pointer;
     background-image: linear-gradient(45deg, #ff6ec4, #7873f5, #00f0f0, #fffc55, #ff6ec4, #7873f5, #00f0f0);
     background-size: 600% 600%;
-    /* Set the size of the gradient background */
     background-clip: text;
     -webkit-background-clip: text;
-    /* For Safari support */
     color: white;
     transition: color 0.3s ease;
     z-index: 10;
@@ -51,20 +44,16 @@ video {
 .light-mode-text:hover {
     cursor: pointer;
     animation: vaporwave-gradient 4s linear infinite;
-    /* Apply the vaporwave gradient animation */
     color: transparent;
 }
 
-/* Define the vaporwave gradient animation */
 @keyframes vaporwave-gradient {
     0% {
         background-position: 0 0;
-        /* Start the animation from left */
     }
 
     100% {
         background-position: 400% 0;
-        /* End the animation at right */
     }
 }
 
