@@ -141,7 +141,7 @@ nav {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    background-image: url('/src/assets/profilePicture.png');
+    background-image: url('/src/assets/images/profilePicture.png');
     background-size: cover;
     background-position: center;
 }

@@ -1,6 +1,6 @@
 import '../style/lightMode.css'
 
-function App() {
+function LightMode({ toggleMode }) {
   return (
     <>
     <head>
@@ -8,7 +8,7 @@ function App() {
     </head>
       <div className="video-container">
       <video autoPlay loop muted playsInline>
-        <source src="../src/assets/light.mp4" id="video" type="video/mp4" />
+        <source src="../src/assets/videos/light.mp4" id="video" type="video/mp4" />
       </video>
           <div className="color-mask"></div>
       </div>
@@ -23,13 +23,13 @@ function App() {
               <a href="#">About Me</a>
           </div>
       </nav>
-      <div className="dark-mode-text d-inline-flex p-2 justify-content-center">
+      <div className="dark-mode-text d-inline-flex p-2 justify-content-center" onClick={toggleMode}>
           Light Mode
       </div>
       <div className='d-flex p-2 justify-content-center'>
-        <img className="transitionIcons mr-3" src='../src/assets/blueDot.png'/>
-        <img className="transitionIcons mr-3" src='../src/assets/blackDot.png'/>
-        <img className="transitionIcons mr-3" src='../src/assets/blackDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png'/>
       </div>
       <div className='d-flex p-2 justify-content-around flex-row align-items-center align-self-center mainContainer' id='topContainer'>
           <div className="d-inline-flex p-2" id="left">
@@ -44,10 +44,10 @@ function App() {
                 <p className='mt-3'>I enjoy traveling and learning languages</p>
               </div>
               <div className="d-inline-flex mt-4">
-                <a href="mailto:andrew.segovia4@gmail.com"><img className="mainIcons mr-3" src='../src/assets/email.png'/></a>
-                <a href="https://github.com/andrewsegovia00" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/gitHub.png'/></a>
-                <a href="https://www.linkedin.com/in/andrewsegovia-dev/" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/linkedin.png'/></a>
-                <a href=""><img className="mainIcons mr-3" src='../src/assets/resumeButton.png'/></a>
+                <a href="mailto:andrew.segovia4@gmail.com"><img className="mainIcons mr-3" src='../src/assets/icons/email.png'/></a>
+                <a href="https://github.com/andrewsegovia00" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/icons/gitHub.png'/></a>
+                <a href="https://www.linkedin.com/in/andrewsegovia-dev/" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/icons/linkedin.png'/></a>
+                <a href=""><img className="mainIcons mr-3" src='../src/assets/icons/resumeButton.png'/></a>
               </div>
             </div>
           </div>
@@ -56,4 +56,4 @@ function App() {
   )
 }
 
-export default App
+export default LightMode

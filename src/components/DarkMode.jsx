@@ -1,6 +1,6 @@
 import '../style/darkMode.css'
 
-function DarkMode() {
+function DarkMode({ toggleMode }) {
   return (
     <>
       <head>
@@ -8,7 +8,7 @@ function DarkMode() {
       </head>
       <div className="video-container">
         <video autoPlay loop muted playsInline>
-          <source src="../src/assets/dark.mp4" type="video/mp4" />
+          <source src="../src/assets/videos/dark.mp4" type="video/mp4" />
         </video>
         <div className="color-mask"></div>
       </div>
@@ -23,13 +23,13 @@ function DarkMode() {
               <a href="#">About Me</a>
           </div>
       </nav>
-      <div className="dark-mode-text d-inline-flex p-2 justify-content-center">
+      <div className="dark-mode-text d-inline-flex p-2 justify-content-center" onClick={{ toggleMode }} >
           Dark Mode
       </div>
       <div className='d-flex p-2 justify-content-center'>
-        <img className="transitionIcons mr-3" src='../src/assets/blueDot.png'/>
-        <img className="transitionIcons mr-3" src='../src/assets/whiteDot.png'/>
-        <img className="transitionIcons mr-3" src='../src/assets/blueDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/whiteDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png'/>
       </div>
       <div className='d-flex p-2 justify-content-around flex-row align-items-center align-self-center mainContainer' id='topContainer'>
           <div className="d-inline-flex p-2" id="left">
@@ -44,10 +44,10 @@ function DarkMode() {
                 <p className='mt-3'>I enjoy traveling and learning languages</p>
               </div>
               <div className="d-inline-flex mt-4">
-                <a href="mailto:andrew.segovia4@gmail.com"><img className="mainIcons mr-3" src='../src/assets/emailGrey.png'/></a>
-                <a href="https://github.com/andrewsegovia00" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/gitHubGrey.png'/></a>
-                <a href="https://www.linkedin.com/in/andrewsegovia-dev/" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/linkedinGrey.png'/></a>
-                <a href=""><img className="mainIcons mr-3" src='../src/assets/resumeButtonGrey.png'/></a>
+                <a href="mailto:andrew.segovia4@gmail.com"><img className="mainIcons mr-3" src='../src/assets/icons/emailGrey.png'/></a>
+                <a href="https://github.com/andrewsegovia00" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/icons/gitHubGrey.png'/></a>
+                <a href="https://www.linkedin.com/in/andrewsegovia-dev/" target="_blank" rel="noreferrer"><img className="mainIcons mr-3" src='../src/assets/icons/linkedinGrey.png'/></a>
+                <a href=""><img className="mainIcons mr-3" src='../src/assets/icons/resumeButtonGrey.png'/></a>
               </div>
             </div>
           </div>
