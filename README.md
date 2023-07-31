@@ -4,16 +4,32 @@
 ![LightMode](./src/assets/images/screenshots/DarkMode.png)
 
 ## SetUp
-This is a React + Vite portfolio
+Hi, my portfolio is a React + Vite project, here are the instructions on how to run my project locally or visit it with this livelink
 
-clone the repo
-```git clone < repo url >```
+First step is to clone the project:
 
-Now cd into the project
-```cd andrews_portfolio```
+```
+git clone <repo url>
+```
 
-Then install dependencies by running npm i
-```npm i```
 
-Finally, run the command 
-```npm run dev```
+Now cd into the project on your terminal
+
+```
+cd andrews_portfolio
+```
+
+
+You'll want to install all the dependencies by running npm i on the terminal and open the project with your favorite IDE, my pick is visual studio code to see the code.
+
+```
+npm i
+```
+
+
+You'll want to run the following command to see the project on a browser window
+
+
+```
+npm run dev
+```
