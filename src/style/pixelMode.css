@@ -1,0 +1,34 @@
+.seomthing {
+    background-image: url('../assets/images/pixelBackground.png');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    /* border-radius: 50%; */
+    /* background-image: url('/src/assets/images/profilePicture.png'); */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.something {
+    width: 100vh;
+    height: max-content;
+    z-index: -1;
+    background-color: rgba(24, 24, 24, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blue {
+    height: 25rem;
+    /* width: ; */
+
+}
