@@ -20,10 +20,11 @@ function DarkAboutMe({toggleLightMode, togglePixelMode}) {
         <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png' onClick={ togglePixelMode }/>
       </div>
       <div className='text-center'>
-        <h1>About Me</h1>
+        <h1 id='aboutTitle-Dark'>About Me</h1>
       </div>
       <div className="terminal-Dark">
       </div>
+      <div className='backdrop'></div>
       </>
   )
 }
