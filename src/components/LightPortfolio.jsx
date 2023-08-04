@@ -1,6 +1,6 @@
 import '../style/lightPortfolio.css'
 
-function LightPortfolio({toggleMode}) {
+function LightPortfolio({toggleDarkMode, togglePixelMode}) {
     return (
 <>
     <div className="video-container">
@@ -10,12 +10,14 @@ function LightPortfolio({toggleMode}) {
         <div className="color-mask"></div>
     </div>
     <div className="dark-mode-text d-inline-flex p-2 justify-content-center" >
-        <div onClick={toggleMode}>Light Mode</div>
+    <div onClick={toggleDarkMode}>
+          Light Mode
+          </div>
     </div>
     <div className='d-flex p-2 justify-content-center'>
         <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png'/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png' onClick={toggleMode}/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png' onClick={toggleDarkMode}/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png' onClick={togglePixelMode}/>
       </div>
     <div className='container mt-5' id="container">
         <section className='projectSection'>
@@ -95,7 +97,6 @@ function LightPortfolio({toggleMode}) {
                         />
                 </div>
             </div>
-
 
         </section>
     </div>

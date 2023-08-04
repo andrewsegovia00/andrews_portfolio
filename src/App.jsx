@@ -5,45 +5,40 @@ import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects'
 
 const App = () => {
-  // const [isLightMode, setIsLightMode] = useState(true);
 
-  // const toggleMode = () => {
-  //   setIsLightMode((prevMode) => !prevMode);
-  // };
   const [isLightMode, setIsLightMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [isPixelMode, setIsPixelMode] = useState(false);
 
-  const toggleMode = () => {
-    setIsLightMode((prevMode) => !prevMode);
+  const toggleLightMode = () => {
+    setIsLightMode(() => true);
+    setIsDarkMode(false);
     setIsPixelMode(false);
   };
 
-  const togglePixelMode = () => {
-    setIsPixelMode((prevMode) => !prevMode);
+  const toggleDarkMode = () => {
+    setIsDarkMode(() => true);
     setIsLightMode(false);
+    setIsPixelMode(false);
+  }
+
+  const togglePixelMode = () => {
+    setIsPixelMode(() => true);
+    setIsLightMode(false);
+    setIsDarkMode(false);
   };
 
-//   return (
-//     <Router>
-//       <Nav isLightMode={isLightMode} toggleMode={toggleMode}/>
-//       <Routes>
-//         <Route path="/" element={<Home isLightMode={isLightMode} toggleMode={toggleMode} />} />
-//         <Route path="/portfolio" element={<Projects isLightMode={isLightMode} toggleMode={toggleMode} />} />
-//       </Routes>
-//     </Router>
-//   );
-// };
 return (
   <Router>
-    <Nav isLightMode={isLightMode} toggleMode={toggleMode} togglePixelMode={togglePixelMode} />
+    <Nav isLightMode={isLightMode} toggleMode={toggleLightMode} toggleDarkMode={toggleDarkMode} togglePixelMode={togglePixelMode}  />
     <Routes>
       <Route
         path="/"
-        element={<Home isLightMode={isLightMode} isPixelMode={isPixelMode} toggleMode={toggleMode} />}
+        element={<Home isLightMode={isLightMode} isPixelMode={isPixelMode} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} toggleLightMode={toggleLightMode} togglePixelMode={togglePixelMode}/>}
       />
       <Route
         path="/portfolio"
-        element={<Projects isLightMode={isLightMode} isPixelMode={isPixelMode} toggleMode={toggleMode} />}
+        element={<Projects isLightMode={isLightMode} isPixelMode={isPixelMode} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} toggleLightMode={toggleLightMode} togglePixelMode={togglePixelMode}/>}
       />
     </Routes>
   </Router>

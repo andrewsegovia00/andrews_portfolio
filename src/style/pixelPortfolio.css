@@ -1,0 +1,153 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    z-index: -2;
+}
+
+body>p {
+    color: #1D1D1F;
+}
+
+.video-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.color-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(208, 210, 221, 0.2);
+    z-index: 10;
+}
+
+/* .dark-mode-text>div {
+    color: #1D1D1F;
+} */
+
+.dark-mode-text {
+    font-size: 1.8rem;
+    font-family: 'Jost Light', sans-serif;
+    /* text-align: center; */
+    /* position: absolute; */
+    /* top: 80px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 100%;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #ff6ec4, #7873f5, #00f0f0, #fffc55, #ff6ec4, #7873f5, #00f0f0);
+    background-size: 600% 600%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color 0.3s ease;
+    z-index: 10;
+    font-weight: lighter;
+    color: #1D1D1F;
+}
+
+.dark-mode-text:hover {
+    cursor: pointer;
+    animation: vaporwave-gradient 4s linear infinite;
+    color: transparent;
+}
+
+.regTxtProject {
+    color: black;
+}
+
+@keyframes vaporwave-gradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 400% 0;
+    }
+}
+
+.closingTag {
+    margin: 1rem;
+}
+
+.profilePicture {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-image: url('/src/assets/images/profilePicture.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.mainContainer {
+    margin-top: 5rem;
+}
+
+.transitionIcons {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1150px) {
+
+    .profilePicture {
+        margin-left: 4rem;
+    }
+
+    .mainText {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 1420px) {
+
+    .profilePicture {
+        margin-left: 12rem;
+    }
+
+    .mainText {
+        margin-right: 7rem;
+    }
+}
+
+.indiv-project-pixel {
+    padding: 3rem;
+    background-image: url('../assets/images/pixelProjectBackground.png');
+    width: auto;
+    /* background-color: red; */
+    background-size: contain;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+#pixel-project-title {
+    font-family: 'Press Start 2P';
+    color: #E702AB;
+}
+
+.regTxtProjectDark-pixel {
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: .6rem;
+}
+
+#linksCont-pixel {
+    color: white;
+    font-family: 'Press Start 2P';
+    font-size: .6rem;
+}

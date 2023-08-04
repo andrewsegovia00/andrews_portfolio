@@ -2,10 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../style/navBar.css'
 
-function NavBar({ isLightMode, toggleMode, togglePixelMode }) {
-  // const navBarStyle = {
-  //   color: isLightMode ? 'black' : 'white',
-  // };
+function NavBar({ isLightMode, isDarkMode, togglePixelMode }) {
   return (
     <>
       <nav className='navbar'>
@@ -17,7 +14,6 @@ function NavBar({ isLightMode, toggleMode, togglePixelMode }) {
             <Link to="/">Home</Link>
             <Link to="/portfolio">Portfolio</Link>
             <a href="#">About Me</a>
-            <button onClick={togglePixelMode}>Pixel Mode</button>
         </div>
       </nav>
   </>

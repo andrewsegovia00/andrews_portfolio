@@ -1,6 +1,6 @@
 import '../style/lightMode.css'
 
-function LightMode({toggleMode}) {
+function LightMode({toggleDarkMode, togglePixelMode}) {
   return (
     <>
       <div className="video-container">
@@ -10,14 +10,14 @@ function LightMode({toggleMode}) {
           <div className="color-mask"></div>
       </div>
       <div className="dark-mode-text d-inline-flex p-2 justify-content-center" >
-        <div onClick={toggleMode}>
+        <div onClick={toggleDarkMode}>
           Light Mode
           </div>
       </div>
       <div className='d-flex p-2 justify-content-center'>
         <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png'/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png' onClick={toggleMode}/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png'/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png' onClick={toggleDarkMode}/>
+        <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png'onClick={togglePixelMode}/>
       </div>
       <div className='d-flex p-2 justify-content-around flex-row align-items-center align-self-center mainContainer' id='topContainer'>
           <div className="d-inline-flex p-2" id="left">
