@@ -19,8 +19,8 @@ function LightAboutMe({toggleDarkMode, togglePixelMode}) {
         <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png' onClick={toggleDarkMode}/>
         <img className="transitionIcons mr-3" src='../src/assets/images/blackDot.png'onClick={togglePixelMode}/>
       </div>
-      <div id="aboutTitle" className='text-center'>
-      <h1>About Me</h1>
+      <div className='text-center'>
+      <h1 id="aboutTitle">About Me</h1>
       </div>
         <div className="terminal "></div>
       </>
