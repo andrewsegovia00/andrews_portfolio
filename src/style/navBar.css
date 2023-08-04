@@ -88,3 +88,8 @@
     transform: scaleX(1);
     opacity: 1;
 }
+
+#logoLink {
+    text-decoration: none;
+
+}
