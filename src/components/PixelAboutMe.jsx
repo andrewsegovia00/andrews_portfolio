@@ -15,7 +15,6 @@ function PixelAboutMe({toggleLightMode, toggleDarkMode}) {
         <img className="transitionIcons mr-3" src='../src/assets/images/redHeart.png'/>
       </div>
       <div className='text-center'>
-        {/* <h1>About Me</h1> */}
       </div>
       <div className='terminal-Pixel'></div>
       </>
