@@ -5,7 +5,7 @@ function DarkAboutMe({toggleLightMode, togglePixelMode}) {
     <>
       <div className="video-container">
         <video autoPlay loop muted playsInline>
-          <source src="../src/assets/videos/dark.mp4" type="video/mp4" />
+          <source src="/assets/videos/dark.mp4" type="video/mp4" />
         </video>
         <div className="color-mask"></div>
       </div>
@@ -15,9 +15,9 @@ function DarkAboutMe({toggleLightMode, togglePixelMode}) {
           </div>
       </div>
       <div className='d-flex p-2 justify-content-center'>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png' onClick={ toggleLightMode }/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/whiteDot.png'/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blueDot.png' onClick={ togglePixelMode }/>
+        <img className="transitionIcons mr-3" src='/assets/images/blueDot.png' onClick={ toggleLightMode }/>
+        <img className="transitionIcons mr-3" src='/assets/images/whiteDot.png'/>
+        <img className="transitionIcons mr-3" src='/assets/images/blueDot.png' onClick={ togglePixelMode }/>
       </div>
       <div className='text-center'>
         <h1 id='aboutTitle-Dark'>About Me</h1>

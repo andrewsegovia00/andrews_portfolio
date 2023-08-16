@@ -1,5 +1,5 @@
 .seomthing {
-    background-image: url('../assets/images/pixelBackground.png');
+    background-image: url('../../public/assets/images/pixelBackground.png');
     width: 100%;
     height: 100%;
     position: fixed;

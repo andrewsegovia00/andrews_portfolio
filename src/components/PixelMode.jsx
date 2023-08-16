@@ -10,9 +10,9 @@ function PixelMode({toggleLightMode, toggleDarkMode}) {
           </div>
       </div>
       <div className='d-flex p-2 justify-content-center'>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackHeart.png' onClick={ toggleLightMode }/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackHeart.png' onClick={ toggleDarkMode }/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/redHeart.png'/>
+        <img className="transitionIcons mr-3" src='/assets/images/blackHeart.png' onClick={ toggleLightMode }/>
+        <img className="transitionIcons mr-3" src='/assets/images/blackHeart.png' onClick={ toggleDarkMode }/>
+        <img className="transitionIcons mr-3" src='/assets/images/redHeart.png'/>
       </div>
       
       <div className='d-flex p-2 justify-content-around flex-row align-items-center align-self-center mainContainer' id='topContainer'>
@@ -20,7 +20,7 @@ function PixelMode({toggleLightMode, toggleDarkMode}) {
               <div className="profilePicture"></div>
           </div>
           <div className="d-inline-flex p-2" id="left">
-                <img className='blue' src="../src/assets/images/pixelIntro.png" />
+                <img className='blue' src="/assets/images/pixelIntro.png" />
           </div>
       </div>
       <div className='pixelBackdrop'></div>

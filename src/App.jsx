@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/NavBar'
 import Home from './pages/Home/Home'
@@ -37,13 +37,15 @@ return (
         path="/"
         element={<Home isLightMode={isLightMode} isPixelMode={isPixelMode} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} toggleLightMode={toggleLightMode} togglePixelMode={togglePixelMode}/>}
       />
-      <Route
-        path="/portfolio"
-        element={<Projects isLightMode={isLightMode} isPixelMode={isPixelMode} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} toggleLightMode={toggleLightMode} togglePixelMode={togglePixelMode}/>}
-      />
+
       <Route
         path="/about"
         element={<About isLightMode={isLightMode} isPixelMode={isPixelMode} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} toggleLightMode={toggleLightMode} togglePixelMode={togglePixelMode}/>}
+      />
+
+      <Route
+        path="/portfolio"
+        element={<Projects isLightMode={isLightMode} isPixelMode={isPixelMode} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} toggleLightMode={toggleLightMode} togglePixelMode={togglePixelMode}/>}
       />
     </Routes>
   </Router>

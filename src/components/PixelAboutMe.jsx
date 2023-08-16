@@ -10,9 +10,9 @@ function PixelAboutMe({toggleLightMode, toggleDarkMode}) {
           </div>
       </div>
       <div className='d-flex p-2 justify-content-center'>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackHeart.png' onClick={ toggleLightMode }/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/blackHeart.png' onClick={ toggleDarkMode }/>
-        <img className="transitionIcons mr-3" src='../src/assets/images/redHeart.png'/>
+        <img className="transitionIcons mr-3" src='/assets/images/blackHeart.png' onClick={ toggleLightMode }/>
+        <img className="transitionIcons mr-3" src='/assets/images/blackHeart.png' onClick={ toggleDarkMode }/>
+        <img className="transitionIcons mr-3" src='/assets/images/redHeart.png'/>
       </div>
       <div className='text-center'>
       </div>

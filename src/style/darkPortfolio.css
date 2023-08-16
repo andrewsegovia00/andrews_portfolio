@@ -65,7 +65,7 @@
     color: #467edf;
 }
 
-.linksContainer *h5 {
+.linksContainer>h5 {
     font-weight: lighter;
     font-family: 'Jost', sans-serif;
     color: white;

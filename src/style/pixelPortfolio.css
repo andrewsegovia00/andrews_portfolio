@@ -89,7 +89,7 @@ video {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    background-image: url('/src/assets/images/profilePicture.png');
+    background-image: url('../../public/assets/images/profilePicture.png');
     background-size: cover;
     background-position: center;
 }
@@ -126,7 +126,7 @@ video {
 
 .indiv-project-pixel {
     padding: 3rem;
-    background-image: url('../assets/images/pixelProjectBackground.png');
+    background-image: url('../../public/assets/images/pixelProjectBackground.png');
     width: auto;
     /* background-color: red; */
     background-size: contain;

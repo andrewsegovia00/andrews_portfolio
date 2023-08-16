@@ -1,5 +1,5 @@
 .terminal {
-    background-image: url('../assets/images/LightModeAbout.png');
+    background-image: url('/assets/images/LightModeAbout.png');
     margin: 2rem;
     width: 100%;
     height: 100vmax;
@@ -12,6 +12,5 @@
     color: black;
     font-size: 1.5rem;
     margin-top: 2rem;
-    background-color: green;
     /* font-weight: lighter; */
 }
