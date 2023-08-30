@@ -15,7 +15,7 @@ function NavBar({ isLightMode, isDarkMode, togglePixelMode }) {
         <div className={isLightMode ? "right" : "rightDarkMode"}>
             <Link to="/">Home</Link>
             <Link to="/portfolio">Portfolio</Link>
-            <a href="/about">About Me</a>
+            <Link to="/about">About Me</Link>
         </div>
       </nav>
   </>
